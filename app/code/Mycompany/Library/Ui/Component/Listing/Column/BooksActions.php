@@ -24,10 +24,10 @@ namespace Mycompany\Library\Ui\Component\Listing\Column;
 class BooksActions extends \Magento\Ui\Component\Listing\Columns\Column
 {
 
-    const URL_PATH_DELETE = 'mycompany_library/books/delete';
+    const URL_PATH_DETAILS = 'mycompany_library/books/details';
     const URL_PATH_EDIT = 'mycompany_library/books/edit';
     protected $urlBuilder;
-    const URL_PATH_DETAILS = 'mycompany_library/books/details';
+    const URL_PATH_DELETE = 'mycompany_library/books/delete';
 
     /**
      * @param \Magento\Framework\View\Element\UiComponent\ContextInterface $context

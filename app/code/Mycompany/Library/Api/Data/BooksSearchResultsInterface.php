@@ -33,7 +33,7 @@ interface BooksSearchResultsInterface extends \Magento\Framework\Api\SearchResul
     public function getItems();
 
     /**
-     * Set Title list.
+     * Set title list.
      * @param \Mycompany\Library\Api\Data\BooksInterface[] $items
      * @return $this
      */

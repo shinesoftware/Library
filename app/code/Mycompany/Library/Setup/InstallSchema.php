@@ -52,7 +52,7 @@ class InstallSchema implements InstallSchemaInterface
 
         
         $table_mycompany_books->addColumn(
-            'Title',
+            'title',
             \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
             null,
             ['nullable' => False],
@@ -62,7 +62,7 @@ class InstallSchema implements InstallSchemaInterface
 
         
         $table_mycompany_books->addColumn(
-            'Description',
+            'description',
             \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
             null,
             ['nullable' => False],
@@ -72,7 +72,7 @@ class InstallSchema implements InstallSchemaInterface
 
         
         $table_mycompany_books->addColumn(
-            'Price',
+            'price',
             \Magento\Framework\DB\Ddl\Table::TYPE_FLOAT,
             null,
             [],
@@ -82,7 +82,7 @@ class InstallSchema implements InstallSchemaInterface
 
         
         $table_mycompany_books->addColumn(
-            'ISBN',
+            'isbn',
             \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
             null,
             [],
@@ -92,11 +92,21 @@ class InstallSchema implements InstallSchemaInterface
 
         
         $table_mycompany_books->addColumn(
-            'Pages',
+            'pages',
             \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
             null,
             [],
-            'Pages'
+            'pages'
+        );
+        
+
+        
+        $table_mycompany_books->addColumn(
+            'cover',
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            null,
+            [],
+            'cover'
         );
         
 

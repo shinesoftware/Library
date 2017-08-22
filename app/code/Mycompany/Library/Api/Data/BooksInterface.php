@@ -24,12 +24,13 @@ namespace Mycompany\Library\Api\Data;
 interface BooksInterface
 {
 
-    const DESCRIPTION = 'Description';
-    const PRICE = 'Price';
-    const TITLE = 'Title';
-    const PAGES = 'Pages';
+    const DESCRIPTION = 'description';
+    const TITLE = 'title';
+    const ISBN = 'isbn';
+    const PAGES = 'pages';
+    const COVER = 'cover';
     const BOOKS_ID = 'books_id';
-    const ISBN = 'ISBN';
+    const PRICE = 'price';
 
 
     /**
@@ -48,77 +49,92 @@ interface BooksInterface
     public function setBooksId($booksId);
 
     /**
-     * Get Title
+     * Get title
      * @return string|null
      */
     
     public function getTitle();
 
     /**
-     * Set Title
-     * @param string $Title
+     * Set title
+     * @param string $title
      * @return \Mycompany\Library\Api\Data\BooksInterface
      */
     
-    public function setTitle($Title);
+    public function setTitle($title);
 
     /**
-     * Get Description
+     * Get description
      * @return string|null
      */
     
     public function getDescription();
 
     /**
-     * Set Description
-     * @param string $Description
+     * Set description
+     * @param string $description
      * @return \Mycompany\Library\Api\Data\BooksInterface
      */
     
-    public function setDescription($Description);
+    public function setDescription($description);
 
     /**
-     * Get Price
+     * Get price
      * @return string|null
      */
     
     public function getPrice();
 
     /**
-     * Set Price
-     * @param string $Price
+     * Set price
+     * @param string $price
      * @return \Mycompany\Library\Api\Data\BooksInterface
      */
     
-    public function setPrice($Price);
+    public function setPrice($price);
 
     /**
-     * Get ISBN
+     * Get isbn
      * @return string|null
      */
     
-    public function getISBN();
+    public function getIsbn();
 
     /**
-     * Set ISBN
-     * @param string $ISBN
+     * Set isbn
+     * @param string $isbn
      * @return \Mycompany\Library\Api\Data\BooksInterface
      */
     
-    public function setISBN($ISBN);
+    public function setIsbn($isbn);
 
     /**
-     * Get Pages
+     * Get pages
      * @return string|null
      */
     
     public function getPages();
 
     /**
-     * Set Pages
-     * @param string $Pages
+     * Set pages
+     * @param string $pages
      * @return \Mycompany\Library\Api\Data\BooksInterface
      */
     
-    public function setPages($Pages);
+    public function setPages($pages);
+
+    /**
+     * Get cover
+     * @return string|null
+     */
+    
+    public function getCover();
+
+    /**
+     * Set cover
+     * @param string $cover
+     * @return \Mycompany\Library\Api\Data\BooksInterface
+     */
+    
+    public function setCover($cover);
 }

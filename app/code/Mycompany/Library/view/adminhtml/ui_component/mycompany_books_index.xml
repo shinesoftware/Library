@@ -87,7 +87,7 @@
 				</item>
 			</argument>
 		</column>
-		<column name="Title">
+		<column name="title">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
 					<item name="filter" xsi:type="string">text</item>
@@ -108,9 +108,11 @@
 				</item>
 			</argument>
 		</actionsColumn>
-		<column name="Description">
+		<column name="description">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
+					<item name="filter" xsi:type="string">text</item>
+					<item name="label" translate="true" xsi:type="string">Description</item>
 					<item name="editor" xsi:type="array">
 						<item name="editorType" xsi:type="string">text</item>
 						<item name="validation" xsi:type="array">
@@ -120,7 +122,7 @@
 				</item>
 			</argument>
 		</column>
-		<column name="Price">
+		<column name="price">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
 					<item name="filter" xsi:type="string">text</item>
@@ -134,7 +136,7 @@
 				</item>
 			</argument>
 		</column>
-		<column name="ISBN">
+		<column name="isbn">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
 					<item name="filter" xsi:type="string">text</item>
@@ -148,11 +150,25 @@
 				</item>
 			</argument>
 		</column>
-		<column name="Pages">
+		<column name="pages">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
 					<item name="filter" xsi:type="string">text</item>
 					<item name="label" translate="true" xsi:type="string">Pages</item>
+					<item name="editor" xsi:type="array">
+						<item name="editorType" xsi:type="string">text</item>
+						<item name="validation" xsi:type="array">
+							<item name="required-entry" xsi:type="boolean">false</item>
+						</item>
+					</item>
+				</item>
+			</argument>
+		</column>
+		<column name="cover">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="filter" xsi:type="string">text</item>
+					<item name="label" translate="true" xsi:type="string">Cover</item>
 					<item name="editor" xsi:type="array">
 						<item name="editorType" xsi:type="string">text</item>
 						<item name="validation" xsi:type="array">

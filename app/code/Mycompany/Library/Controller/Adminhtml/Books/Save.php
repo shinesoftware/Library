@@ -49,7 +49,7 @@ class Save extends \Magento\Backend\App\Action
     {
         /** @var \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
         $resultRedirect = $this->resultRedirectFactory->create();
-        $data = $this->getRequest()->getPostValue();
+        $data = $this->getRequest()->getPostValue('books_data');
         if ($data) {
             $id = $this->getRequest()->getParam('books_id');
         

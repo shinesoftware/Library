@@ -70,7 +70,7 @@ class Edit extends \Mycompany\Library\Controller\Adminhtml\Books
             $id ? __('Edit Books') : __('New Books'),
             $id ? __('Edit Books') : __('New Books')
         );
-        $resultPage->getConfig()->getTitle()->prepend(__('Bookss'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Books'));
         $resultPage->getConfig()->getTitle()->prepend($model->getId() ? $model->getTitle() : __('New Books'));
         return $resultPage;
     }
