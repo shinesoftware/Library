@@ -3,10 +3,10 @@
 	<update handle="styles"/>
 	<body>
 		<referenceContainer name="content">
-			<block class="Mycompany\Library\Block\Adminhtml\Books\Edit" name="mycompany_license_books.edit"/>
+			<block class="Mycompany\Library\Block\Adminhtml\Books\Edit" name="mycompany_library_books.edit"/>
 		</referenceContainer>
 		<referenceContainer name="left">
-			<block class="Mycompany\Library\Block\Adminhtml\Books\Edit\Tabs" name="mycompany_license_books.edit.tabs"/>
+			<block class="Mycompany\Library\Block\Adminhtml\Books\Edit\Tabs" name="mycompany_library_books.edit.tabs"/>
 		</referenceContainer>
 	</body>
 </page>
