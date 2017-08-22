@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Mycompany_Library::Books" sortOrder="10" title="Books">
+					<resource id="Mycompany_Library::Books_save" sortOrder="10" title="Save Books"/>
+					<resource id="Mycompany_Library::Books_delete" sortOrder="20" title="Delete Books"/>
+					<resource id="Mycompany_Library::Books_update" sortOrder="30" title="Update Books"/>
+					<resource id="Mycompany_Library::Books_view" sortOrder="40" title="View Books"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

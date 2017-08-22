@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Mycompany::top_level" module="Mycompany_Library" resource="Magento_Backend::content" sortOrder="9999" title="Mycompany"/>
+		<add action="mycompany_library/books/index" id="Mycompany::mycompany_books" module="Mycompany_Library" parent="Mycompany::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Books"/>
+	</menu>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Mycompany\Library\Api\BooksRepositoryInterface" type="Mycompany\Library\Model\BooksRepository"/>
+	<preference for="Mycompany\Library\Api\Data\BooksInterface" type="Mycompany\Library\Model\Books"/>
+	<preference for="Mycompany\Library\Api\Data\BooksSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Mycompany\Library\Model\ResourceModel\Books\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">mycompany_books</argument>
+			<argument name="resourceModel" xsi:type="string">Mycompany\Library\Model\ResourceModel\Books\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="mycompany_books_grid_data_source" xsi:type="string">Mycompany\Library\Model\ResourceModel\Books\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

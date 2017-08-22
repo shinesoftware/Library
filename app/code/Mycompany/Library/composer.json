@@ -1,0 +1,21 @@
+{
+    "name": "mycompany/module-library",
+    "description": "This is a test.",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Michelangelo Turillo",
+            "email": "mturillo@shinesoftware.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mycompany\\Library\\": ""
+        }
+    }
+}
